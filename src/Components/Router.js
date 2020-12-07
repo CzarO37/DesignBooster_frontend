@@ -1,8 +1,10 @@
 import HomePage from "./HomePage.js";
+import DetailsPage from "./DetailsPage.js";
 
 const routes = {
   "/": HomePage,
   "/home": HomePage,
+  "/detailsPage": DetailsPage,
 };
 
 let componentToRender;

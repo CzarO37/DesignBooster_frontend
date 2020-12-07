@@ -1,4 +1,4 @@
-let top = document.querySelector(".top");
+let header = document.querySelector("header");
 
 const NavBar = () => {
     let nav = `
@@ -22,7 +22,7 @@ const NavBar = () => {
       </ul>
       </nav>
       </div> `;
-  top.innerHTML = nav;
+  header.innerHTML = nav;
 };
 
 export default NavBar;

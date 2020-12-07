@@ -1,4 +1,6 @@
 import _banner from "../img/banner.jpg";
+import test_img from "../img/test.jpg";
+import test_img2 from "../img/test2.jpg";
 
 let top = document.querySelector(".top");
 let content = document.querySelector(".content");
@@ -9,36 +11,19 @@ const HomePage = () => {
   top.innerHTML = banner;
 
   const pageContent = 
-  `<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
+  `<h1 class="display-4">TOP 3</h1>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
+  <div class="row top-3">
+  <div class="card-deck">
+  <div class="card border-0 ">
+    <img class="card-img-top rounded-0" src="${test_img}" alt="Card image cap">
   </div>
-  <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
+  <div class="card border-0">
+    <img class="card-img-top rounded-0" src="${test_img2}" alt="Card image cap">
+  </div>
+  <div class="card border-0">
+    <img class="card-img-top rounded-0" src="${test_img}" alt="Card image cap">
+  </div>
   </div>
   </div>`;
   content.innerHTML = pageContent;

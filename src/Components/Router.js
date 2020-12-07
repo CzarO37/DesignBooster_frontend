@@ -1,8 +1,10 @@
 import HomePage from "./HomePage.js";
+import ContentPage from "./ContentPage.js";
 
 const routes = {
   "/": HomePage,
   "/home": HomePage,
+  "/content": ContentPage,
 };
 
 let componentToRender;

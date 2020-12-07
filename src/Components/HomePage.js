@@ -1,4 +1,3 @@
-import { setLayout } from "../utils/render.js";
 import _banner from "../img/banner.jpg";
 
 let top = document.querySelector(".top");

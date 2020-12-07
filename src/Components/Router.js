@@ -1,18 +1,12 @@
 import HomePage from "./HomePage.js";
-<<<<<<< HEAD
 import DetailsPage from "./DetailsPage.js";
-=======
 import ContentPage from "./ContentPage.js";
->>>>>>> c5d2baa4c5668135f672f59e3d2816d7251f7885
 
 const routes = {
   "/": HomePage,
   "/home": HomePage,
-<<<<<<< HEAD
   "/detailsPage": DetailsPage,
-=======
   "/content": ContentPage,
->>>>>>> c5d2baa4c5668135f672f59e3d2816d7251f7885
 };
 
 let componentToRender;

@@ -1,12 +1,16 @@
 import _banner from "../img/banner.jpg";
 import test_img from "../img/test.jpg";
 import test_img2 from "../img/test2.jpg";
+import { RedirectUrl } from "../Components/Router.js";
 
+let header = document.querySelector("header");
 let top = document.querySelector(".top");
 let content = document.querySelector(".content");
 let footer = document.querySelector(".footer_text");
 
 const HomePage = () => {  
+  header.innerHTML = "";
+
   const banner = `<img src="${_banner}" class="img-responsive banner_img"></img>`;
   top.innerHTML = banner;
 
@@ -30,11 +34,14 @@ const HomePage = () => {
 
   const downArrow = 
   `<div class="col"></div>
-  <div class="col d-flex justify-content-center arrow"><div class="chevron"></div>
+  <div class="col d-flex justify-content-center arrow data-uri="/content"><div class="chevron"></div>
   <div class="chevron"></div>
   <div class="chevron"></div></div>
   <div class="col"></div>`;
   footer.innerHTML = downArrow;
+  footer.addEventListener("onclick",toUrl = () => {
+    window.location.href = "/content";
+  });
 };
 
 export default HomePage;

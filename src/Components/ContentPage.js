@@ -9,8 +9,6 @@ let footer = document.querySelector(".footer_text");
 const ContentPage = () => {
     NavBar();
 
-    footer.innerHTML = "";
-
     let designs = `
     <div class="row content-designs">
       <div class="card-deck">

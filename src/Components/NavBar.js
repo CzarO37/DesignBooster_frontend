@@ -5,7 +5,7 @@ let header = document.querySelector("header");
 const NavBar = () => {
     const banner = `<img src="${_banner}" class="img-responsive banner_img"></img>`;
     let nav = `
-    <div id="navBar">
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/" data-uri="/">Top 3</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,8 +23,7 @@ const NavBar = () => {
           <a class="nav-link" href="#" data-uri="/contact">Contact us</a>
         </li>
       </ul>
-      </nav>
-      </div> `;
+      </nav> `;
   header.innerHTML = banner+nav;
 };
 

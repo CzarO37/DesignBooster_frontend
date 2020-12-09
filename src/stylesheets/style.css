@@ -83,3 +83,9 @@
   .content-designs {
     margin-bottom: 5vh;
   }
+  footer {
+    margin-top: 9vh;
+  }
+  .footer-copyright {
+    background-color: rgb(56, 56, 56);
+  }

@@ -11,8 +11,7 @@ let content = document.querySelector(".content");
 const DetailsPage = ()=>{
   NavBar();
     const pageContent = 
-    `<div class = "container">
-        <div class="row, border">
+    `<div class="row border">
             <div class="col">
             <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -25,7 +24,7 @@ const DetailsPage = ()=>{
           
             <!-- The slideshow -->
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active border-0">
                 <img class="img-fluid image_details" src="${test_img}" alt="Los Angeles">
               </div>
               <div class="carousel-item">
@@ -47,7 +46,7 @@ const DetailsPage = ()=>{
             </div>
             </div>
         </div>
-        <div class ="row, pt-5"></div>
+        <div class ="row pt-5"></div>
         <div class="row">
             <div class="col border border-dark">
                 <h3>Description:</h3>
@@ -70,8 +69,7 @@ const DetailsPage = ()=>{
                 <div class="m-2 pb-2"><img src="${email_icon}" alt = "email"><p style="float:right;">Email adress</p></div>
               </div>
             </div>
-        </div>
-    </div>`;
+        </div>`;
     content.innerHTML = pageContent;
 }
 

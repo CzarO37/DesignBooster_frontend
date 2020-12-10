@@ -1,11 +1,9 @@
 import HomePage from "./HomePage.js";
-import DetailsPage from "./DetailsPage.js";
 import ContentPage from "./ContentPage.js";
 
 const routes = {
   "/": HomePage,
   "/home": HomePage,
-  "/detailsPage": DetailsPage,
   "/content": ContentPage,
 };
 

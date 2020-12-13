@@ -1,10 +1,15 @@
 import HomePage from "./HomePage.js";
 import ContentPage from "./ContentPage.js";
+import ErrorPage from "./ErrorPage.js";
+import LoginPage from "./LoginPage.js";
+
 
 const routes = {
   "/": HomePage,
   "/home": HomePage,
   "/content": ContentPage,
+  "/error": ErrorPage,
+  "/login": LoginPage,
 };
 
 let componentToRender;

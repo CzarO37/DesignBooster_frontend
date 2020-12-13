@@ -1,4 +1,7 @@
 const STORE_NAME = "user";
+
+const THEME = "theme";
+
 const getUserSessionData = () => {
   const retrievedUser = localStorage.getItem(STORE_NAME);
   if (!retrievedUser) return;
@@ -10,8 +13,26 @@ const setUserSessionData = (user) => {
   localStorage.setItem(STORE_NAME, storageValue);
 };
 
-const removeSessionData = () => {
-  localStorage.removeItem(STORE_NAME);
+const getTheme = () => {
+  const theme = localStorage.getItem(THEME);
+  if (!theme) return;
+  return JSON.parse(theme);
 };
 
-export { getUserSessionData, setUserSessionData, removeSessionData };
+const setTheme = (theme) => {
+  const storageValue = JSON.stringify(theme);
+  localStorage.setItem(THEME, storageValue);
+};
+
+const removeSessionData = () => {
+  localStorage.removeItem(STORE_NAME);
+  localStorage.removeItem(THEME);
+};
+
+export {
+  getUserSessionData,
+  setUserSessionData,
+  removeSessionData,
+  getTheme,
+  setTheme,
+};

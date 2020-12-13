@@ -2,6 +2,8 @@ import HomePage from "./HomePage.js";
 import ContentPage from "./ContentPage.js";
 import ErrorPage from "./ErrorPage.js";
 import LoginPage from "./LoginPage.js";
+import LogoutPage from "./Logout.js";
+import RegisterPage from "./RegisterPage.js";
 
 
 const routes = {
@@ -10,6 +12,8 @@ const routes = {
   "/content": ContentPage,
   "/error": ErrorPage,
   "/login": LoginPage,
+  "/logout": LogoutPage,
+  "/register": RegisterPage,
 };
 
 let componentToRender;

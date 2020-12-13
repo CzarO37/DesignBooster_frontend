@@ -26,7 +26,7 @@ const NavBar = () => {
           <a class="nav-link" href="#" data-uri="/contact">Contact us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item nav-link disabled" href="#">${user.username}</a>  
+          <a class="nav-item nav-link href="#" data-uri="/logout">${user.username}</a>  
         </li>
       </ul>
       </nav> `;
@@ -50,6 +50,9 @@ const NavBar = () => {
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" href="#" data-uri="/login">Login</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="#" data-uri="/register">Register</a> 
         </li>
       </ul>
       </nav> `;

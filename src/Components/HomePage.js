@@ -16,10 +16,11 @@ const HomePage = () => {
   NavBar();
   const user = getUserSessionData();
 
-  fetch("/designs", {
+  fetch("http://localhost:3000/designs", {
     method: "GET",
+    mode: "no-cors",
     headers: {
-      Authorization: user.token,
+      //Authorization: user.token,
     },
   })
     .then((response) => {
